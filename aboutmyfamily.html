@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Blog</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <!-- Main CSS -->
+        <link href="css/main.css" rel="stylesheet">
+        <link href="css/animate.css" rel="stylesheet">
+
+
+        <!-- Google Fonts -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:100,300,400,500,500i,700" rel="stylesheet">
+        
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    .contact{
+        margin-top: 1%; 
+        color: blue;
+    }
+    .menu{
+        margin-top: 2%;
+        width: 100%;
+        /* margin: 0 auto; */
+        /* margin-left:-24%;
+        margin-right: -24%; */
+    }
+    /* p.img_my_self{ 
+        margin-top: 0.1%; 
+        margin-left: -20%; 
+        font-size: 1000px;
+    } */
+    .contact{
+        color: white; 
+        background-color: blue; 
+        padding: 5px;
+        width: 100%;
+    }
+    .img-responsive{
+        width: 100%;
+    }
+    .img_my_self{
+        padding-right: 5%;
+    }
+    .img_family{
+      
+    }
+    .img_my_self, .img_family{
+        margin-top: 2%;
+    }
+    .information{
+      display: flex;
+      flex-direction: column;
+    }
+    .link{
+        font-size: 300%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+body{
+  display: table;
+
+width: 100%;
+
+height: 100%;
+}
+    .img_family {box-sizing: border-box;}
+body {
+  font-family: Verdana, sans-serif;
+}
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+.nav-link{
+  background-color: #f8f9fa;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 4.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+
+footer {
+    border-top: 1px solid rgba(255, 255, 255, 0.27);
+    background-color: black;
+    width: 100%;
+    position: relative;
+    
+}
+
+footer {
+    padding-top: 50px;
+    padding-bottom: 30px;
+    /* width: 100%; */
+}
+
+footer img {
+    margin-top: 7px;
+}
+
+footer a {
+    color: rgba(255, 255, 255, 0.59);
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 28px;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+}
+
+footer span a {
+    font-size: 12px;
+    cursor: pointer;
+}
+
+footer span a:hover {
+    cursor: pointer;
+}
+
+footer a:hover {
+    color: white;
+    opacity: 1;
+    text-decoration: none;
+}
+
+footer address {
+    color: rgba(255, 255, 255, 0.59);
+    line-height: 2;
+}
+
+footer h5 {
+    font-size: 16px;
+    padding-bottom: 10px;
+    text-align: left;
+    text-transform: uppercase;
+    color: white;
+
+}
+
+footer h2 {
+    color: white;
+
+}
+
+footer p {
+    font-size: 12px;
+    padding-right: 20px;
+    padding-top: 30px;
+    color: #4f4f4f;
+}
+
+footer textarea.form-control {
+    width: 100%;
+    height: auto;
+}
+
+footer .form-control {
+    display: block;
+    width: 100%;
+    height: 40px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: white;
+    background-color: #414141;
+    border: none;
+    border-radius: 0;
+    margin-bottom: 10px;
+}
+
+footer .btn {
+    float: right;
+    background: white;
+    color: #414141;
+    border: none;
+    width: 130px;
+    height: 40px;
+    text-transform: uppercase;
+    font-weight: 600;
+    border-radius: 0;
+}
+
+footer ::placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: white;
+    opacity: 0.5;
+    font-size: 12px;
+    font-style: italic;
+    font-weight: 500;
+    /* Firefox */
+}
+
+footer :-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color: #8b8b8b;
+}
+
+footer ::-ms-input-placeholder {
+    /* Microsoft Edge */
+    color: #8b8b8b;
+}
+
+footer .btn-default:hover {
+    color: #fff;
+    background-color: #000000;
+    border: 1px solid white;
+}
+.container{
+   width:100%;
+   margin: 0 auto;
+}
+.body_navbar_footer{
+  width:100%;
+  margin: 0 auto;
+}
+</style>
+<body>
+<div class="container">
+    <div class="row">
+    <div class="img_my_self col-md-3 col-xs-12">
+        <img style="border-radius: 4%;" class="img-responsive" src="img/me.jpg">
+        <p>Chào mọi người đã đến với Blog của mình, mình là Nguyễn Tuấn Dũng. 
+        Mình là sinh viên ngành Kĩ Thuật Phần Mềm của trường đại học FPT Hà Nội. 
+        Với sở thích khám phá và chia sẻ những "cái đẹp" xung quanh, mình mong mọi người sẽ yêu thích và ủng hộ Blog của mình.
+        <span style="color: red" role="button" class="emoji emoji2764" data-c="❤">❤❤❤</span></p>
+        <div class="information">
+        <button class="contact" role="button">Contact to me</button>
+        <div class="link">
+            <a href="https://www.facebook.com/dungnguyentuan2001/"><i class="fa fa-facebook-square" aria-hidden="true" style="color:#0072bc;"></i></a>
+            <a href="https://www.youtube.com/channel/UCNtoKsUajmAjYEGJMkjzTyg"><i class="fa fa-youtube-square" aria-hidden="true" style="color:#ed1c24;"></i></a>
+            <a href="https://www.instagram.com/tuandung_ntd/?hl=tr"><i class="fa fa-instagram" aria-hidden="true" style="color:#f99d1c;"></i></a>
+            <a href="0969029221"><i class="fa fa-phone" aria-hidden="true" style="color: black;"></i></a>
+            <a href="0969029221"><i class="fa fa-envelope" aria-hidden="true" style="color: rgb(214, 101, 101)"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="img_family col-md-9">
+    <div class="slideshow-container">
+
+      <div class="mySlides fade">
+        <div class="numbertext">1 / 3</div>
+        <img src="img/anhgiadinh.jpg" style="width:100%">
+      </div>
+      
+      <!-- <div class="mySlides fade">
+        <div class="numbertext">2 / 6</div>
+        <img src="img/anhgiadinh2.jpg" style="width:100%">
+      </div> -->
+      
+      <div class="mySlides fade">
+        <div class="numbertext">2 / 3</div>
+        <img src="img/anhgiadinh4.jpg" style="width:100%">
+      </div>
+      
+      <div class="mySlides fade">
+        <div class="numbertext">3 / 3</div>
+        <img src="img/anhgiadinh5.jpg" style="width:100%">
+      </div>
+
+      <!-- <div class="mySlides fade">
+        <div class="numbertext">5 / 6</div>
+        <img src="img/anhgiadinh3.jpg" style="width:100%">
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">6 / 6</div>
+        <img src="img/anhnhaunhet.jpg" style="width:100%">
+      </div> -->
+      </div>
+      <br>
+
+      <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span> 
+        <span class="dot" onclick="currentSlide(2)"></span> 
+        <span class="dot" onclick="currentSlide(3)"></span>  
+        <!-- <span class="dot" onclick="currentSlide(4)"></span> 
+        <span class="dot" onclick="currentSlide(5)"></span> 
+        <span class="dot" onclick="currentSlide(6)"></span>  -->
+      </div>
+    </div>
+      
+    <!-- <div class="img_family col-md-9 col-xs-12">
+        <img style="border-radius: 4%" class="img-responsive" src="img/anhgiadinh.jpg">
+    </div> -->
+    </div>
+
+    <div class="body_navbar_footer">
+    <div class="menu">
+        <nav class="navbar navbar-expand-lg bg-light">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">My Blog</a>
+              <!-- <a style="margin-right: 5%;" class="navbar-brand" href="blogger.html"><img src="img/logo.jpg" alt="logo" style="width: 10%;"></a> -->
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul style="padding-left: 10%" class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Information
+                        </a>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="aboutme.html">About me (Thông tin về tôi)</a></li>
+                          <li><a class="dropdown-item" href="#">About my family (Thông tin về gia đình tôi)</a></li>
+                          <!-- <li><hr class="dropdown-divider"></li>
+                          <li><a class="dropdown-item" href="#">Những thông tin khác (Something else)</a></li> -->
+                        </ul>
+                      </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Individual</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Family</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Travel</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Food</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Sport</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Education</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Store</a>
+                  </li>
+                </ul>
+                <form style="padding-top: 0.7%; padding-left:3%;" class="d-flex" role="search">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+              </div>
+            </div>
+          </nav>
+    </div>
+
+
+    <footer>
+      <!-- Footer Links -->
+      <div class="container text-md-left">
+          <div class="row">
+              <!-- First column -->
+              <div class="col-sm-6 col-md-3">
+                  <a href="blogger.html"><img src="img/logo.jpg" alt="logo" style="width: 30%;"></a>
+                  <p>© 2022 Official Signup Form. All Rights Reserved <span><a href="blogger.html" target="_blank">Dung's Blog</a></span>. Designed by <span><a href="https://www.facebook.com/April22401/" target="_blank">Nguyễn Tuấn Dũng</a></span></p>
+              </div>
+              <!-- First column -->
+
+              <!--Second column-->
+              <div class="col-sm-6 col-md-3 mx-auto">
+                  <h5 class="text-uppercase mb-4 mt-3 font-weight-bold">Our office address</h5>
+                  <address>
+                      M4-2, Khu B, Đại học Mỏ Địa Chất, Phường Cổ Nhuế 2, Quận Bắc Từ Liêm, Hà Nội<br/><br/>
+                      0969 029 221<br/><a href="https://mail.google.com/mail/u/0/#inbox?compose=new" target="_blank">dungnthe150915@fpt.edu.vn</a>.<br/> 
+                  </address>
+              </div>
+              <!-- Second column -->
+
+              <!-- Third column -->
+              <div class="col-sm-6 col-md-2 mx-auto">
+                  <h5 class="text-uppercase mb-4 mt-3 font-weight-bold">Site Links</h5>
+                  <ul class="list-unstyled">
+                      <li>
+                          <a href="blogger.html">Home</a>
+                      </li>
+                      <li>
+                          <a href="about.html">About Us</a>
+                      </li>
+                      <li>
+                          <a href="Photography.html">Your Album</a>
+                      </li>
+                      <li>
+                          <a href="blog.html">Add more Album</a>
+                      </li>
+                      <li>
+                          <a href="careers.html">Careers</a>
+                      </li>
+                      <li>
+                          <a href="Contact-us.html">Contact Us</a>
+                      </li>
+                  </ul>
+              </div>
+              <!-- Third column -->
+
+              <!-- Fourth column -->
+              <div class="col-sm-6 col-md-4">
+                  <h5 class="text-uppercase mb-4 mt-3 font-weight-bold">Quick Contact</h5>
+                  <form>
+                      <ul class="list-unstyled">
+                          <li class="row">
+                              <div class="col-md-6">
+                                  <input required type="text" class="form-control" placeholder="Name">
+                              </div>
+                              <div class="col-md-6">
+                                  <input required type="text" class="form-control" placeholder="Email">
+                              </div>
+                          </li>
+                          <li class="row">
+                              <div class="col-md-12">
+                                  <textarea required class="form-control massage" placeholder="Your Message" rows="5" id="comment"></textarea>
+                              </div>
+                          </li>
+                          <li class="row">
+                              <div class="col-md-12">
+                                  <button type="submit" class="btn btn-default">Contact us</button>
+                              </div>
+                          </li>
+                      </ul>
+                  </form>
+              </div>
+              <!-- Fourth column -->
+          </div>
+      </div>
+      <!-- Footer Links -->
+
+  </footer>
+</div>
+</div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+<script>
+  let slideIndex = 0;
+  showSlides();
+  
+  function showSlides() {
+    let i;
+    let slides = document.getElementsByClassName("mySlides");
+    let dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}    
+    for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+    setTimeout(showSlides, 5000); // Change image every 5 seconds
+  }
+  </script>
+</body>
+</html>
